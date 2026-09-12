@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="#home" class="logo">
+        Rondonuwu, <span>Tesalonika Natalia</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, it's <span>Tesa</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+
+        <p>
+          I am an active Informatics student at Manado State University. I am
+          interested in web development and UI/UX design, and I continue to
+          improve my skills through coursework and personal projects.
+        </p>
+
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/tesalonika-natalia-rondonuwu-a20a96266?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Tesalonika1218"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/thesantlia?igsh=NXF1enc4dHNpMzRj"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@.st4rlight.sssss?_r=1&_t=ZS-98gRhiDBkwP"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="image2.jpeg" alt="Profile Image" />
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2008-2009</div>
+          <div class="timeline-content">
+            <h3>Kindergarten</h3>
+            <p>TK Matuari Karumenga</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2009-2015</div>
+          <div class="timeline-content">
+            <h3>Elementary School</h3>
+            <p>SD Inpres Karumenga</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2015-2018</div>
+          <div class="timeline-content">
+            <h3>Junior High School</h3>
+            <p>SMP Negeri 3 Langowan</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2018-2021</div>
+          <div class="timeline-content">
+            <h3>Senior High School</h3>
+            <p>SMA Negeri 1 Langowan</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022-Now</div>
+          <div class="timeline-content">
+            <h3>University</h3>
+            <p>Manado State University – Informatics Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-container">
+        <div class="services-bar" onclick="toggleService(this)">
+          <h4>UI/UX & Web Design</h4>
+          <p class="service-desc">
+            Designing modern and clean web layouts using Canva and UI principles
+            to create user-friendly designs.
+          </p>
+        </div>
+
+        <div class="services-bar" onclick="toggleService(this)">
+          <h4>Frontend Development</h4>
+          <p class="service-desc">
+            Building responsive and interactive websites using HTML, CSS, and
+            JavaScript with modern UI.
+          </p>
+        </div>
+
+        <div class="services-bar" onclick="toggleService(this)">
+          <h4>Backend Development</h4>
+          <p class="service-desc">
+            Developing backend systems and managing databases including CRUD,
+            authentication, and web integration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+
+      <div class="projects-container">
+        <div class="project-card">
+          <img
+            src="hki1.jpg"
+            alt="HKI Project 1"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="project-info">
+            <h3>Employee Information & Document Archive Information System</h3>
+
+            <p>
+              A web-based information system designed to manage employee data
+              and official document archives within the Department of Public
+              Works and Spatial Planning of Tomohon City. This innovation
+              supports digital transformation by providing structured data
+              management and efficient document retrieval.
+            </p>
+
+            <div class="project-detail">
+              <span>Technology:</span>
+              Web-Based System, Database, Information Management
+            </div>
+
+            <div class="project-detail">
+              <span>Recognition:</span>
+              Copyright Registered (HKI) - Computer Program
+            </div>
+
+            <div class="hki-badge">✓ Intellectual Property Rights (HKI)</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="hki2.jpg"
+            alt="HKI Project 2"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="project-info">
+            <h3>WebGIS Population Prediction System</h3>
+
+            <p>
+              A machine learning-based system that predicts population growth
+              using Random Forest Regression and presents demographic insights
+              through interactive WebGIS visualization.
+            </p>
+
+            <div class="project-detail">
+              <span>Technology:</span>
+              Machine Learning, WebGIS, Data Visualization
+            </div>
+
+            <div class="project-detail">
+              <span>Role:</span>
+              Developer & Researcher
+            </div>
+
+            <div class="hki-badge">✓ Intellectual Property Rights (HKI)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE PREVIEW MODAL -->
+    <div id="imageModal" class="image-modal" onclick="closeImage()">
+      <span class="close-btn">&times;</span>
+
+      <img id="previewImage" class="modal-content" />
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements" id="achievements">
+      <h2 class="heading">Achievements</h2>
+
+      <div class="achievement-gallery">
+        <div class="achievement-item">
+          <img
+            src="certificate1.jpeg"
+            alt="Achievement 1"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="achievement-caption">
+            <h3>Web Development Certification</h3>
+
+            <p>
+              Completed an intensive web development bootcamp covering modern
+              web technologies, frontend development, and software engineering
+              fundamentals.
+            </p>
+            <span>Udemy • 2024</span>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <img
+            src="certificate2.jpg"
+            alt="Achievement 2"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="achievement-caption">
+            <h3>ASEAN Data Science Explorers</h3>
+
+            <p>
+              Participated in ASEAN Data Science Explorers 2023 through SAP
+              Analytics Cloud training and data analytics learning activities.
+            </p>
+            <span>ASEAN Data Science Explorers • 2023</span>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <img
+            src="certificate3.jpeg"
+            alt="Achievement 3"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="achievement-caption">
+            <h3>Top Academic Achievement</h3>
+
+            <p>
+              Recognized as one of the top-performing students in Information
+              Technology with outstanding academic achievement.
+            </p>
+            <span>Universitas Negeri Manado • 2023</span>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <img
+            src="certificate4.jpeg"
+            alt="Achievement 4"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="achievement-caption">
+            <h3>Youth Organization Contribution</h3>
+
+            <p>
+              Recognition for dedication and service as a member of PMR WIRA SMA
+              Negeri 1 Langowan during the 2019/2020 period.
+            </p>
+            <span>SMA Negeri 1 Langowan • 2021</span>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <img
+            src="certificate5.jpeg"
+            alt="Achievement 5"
+            onclick="openImage(this.src)"
+          />
+
+          <div class="achievement-caption">
+            <h3>Creative Achievement Award</h3>
+
+            <p>
+              Awarded for creativity and participation in the Best Costume
+              Puteri Remaja Kreatif GPdI competition at Komisariat Minahasa.
+            </p>
+            <span>Remaja Kreatif GPdI Minahasa • 2019</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact</h2>
+
+      <div class="contact-container">
+        <form
+          onsubmit="
+            sendWhatsApp();
+            return false;
+          "
+        >
+          <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+
+          <div class="input-box">
+            <input type="number" id="phone" placeholder="Phone Number" />
+            <input type="text" id="subject" placeholder="Subject" required />
+          </div>
+
+          <textarea
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <input type="submit" value="Send Message" class="btn" />
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
