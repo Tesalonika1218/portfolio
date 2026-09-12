@@ -777,18 +777,20 @@ textarea {
 
   /* ACHIEVEMENT GALLERY */
 
-  .achievement-gallery {
-    gap: 15px;
-  }
+  @media (max-width: 768px) {
+    .achievement-gallery {
+      gap: 20px;
+      padding: 20px 0;
+    }
 
-  .achievement-item {
-    min-width: 85vw;
-  }
+    .achievement-item {
+      min-width: 90vw;
+    }
 
-  .achievement-item img {
-    height: 350px;
+    .achievement-item img {
+      height: 330px;
+    }
   }
-
   /* CONTACT */
 
   .contact form {
